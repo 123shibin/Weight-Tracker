@@ -1,0 +1,49 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 60px;
+  background-color: #1f2937;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+/* Right side buttons */
+.nav-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.btn {
+  padding: 8px 100px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  width: 30px;
+
+}
+
+.login {
+  background-color: #22c55e;
+}
+
+.signup {
+  background-color: #16a34a;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.logout {
+  
+}

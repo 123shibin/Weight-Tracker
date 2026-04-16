@@ -1,0 +1,185 @@
+/* Body with background image */
+/* REMOVE body background COMPLETELY */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Full screen background container */
+.login-page {
+  min-height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Glass login box */
+.login-box {
+  width: 350px;
+  padding: 40px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+}
+
+
+
+/* Heading */
+.login-box h2 {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* Input fields */
+.input-box {
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+  font-size: 16px;
+}
+
+.input-box label {
+  position: absolute;
+  left: 0;
+  top: 10px;  /* label starts inside the field */
+  color: #aaa;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+/* When focused OR when input has text, float label up */
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label {
+  top: -10px;
+  font-size: 12px;
+  color: #00ffe7;
+}
+
+.toggle-password {
+  display: none;   /* hidden initially */
+  cursor: pointer;
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.toggle-password.show {
+  display: block;
+  opacity: 1;
+}
+
+.toggle-password:hover {
+  color: #00ffe7;
+}
+
+
+/* Login button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #8e2de2; /* purple color */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #4a00e0;
+}
+
+/* Forgot password & Sign Up links */
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: #00ffe7;
+}
+
+/* Separator line */
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+  color: #fff;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.separator:not(:empty)::before {
+  margin-right: .5em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .5em;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #00ffe7;
+  color: #000;
+}

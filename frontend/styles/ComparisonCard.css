@@ -1,0 +1,58 @@
+.compare-card {
+  width: 420px;
+  display: flex;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* LEFT & RIGHT */
+.left, .right {
+  padding: 16px;
+  flex: 1;
+}
+
+h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* INPUT ROW */
+.field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+label {
+  font-size: 14px;
+  width: 50px;
+}
+
+input[type="date"] {
+  flex: 1;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* DIVIDER */
+.divider {
+  width: 2px;
+  background: #ddd;
+}
+
+/* RESULT */
+.result {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #4caf50;
+}
+
+.placeholder {
+  color: #aaa;
+}
